@@ -1,0 +1,7 @@
+SELECT  
+ CORR(TotalSteps, Calories) AS corr_step_calories,
+ CORR(TotalSteps,total_sleep_hrs) AS corr_step_total_sleep_hrs
+
+FROM `learning-468823.bellabeat.daily_all` 
+where Calories >0  AND total_sleep_hrs IS NOT NULL
+

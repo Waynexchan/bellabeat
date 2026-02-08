@@ -1,0 +1,10 @@
+SELECT  
+  FORMAT_DATE('%a', activity_date) AS weekday,
+  ROUND(AVG(TotalSteps),0) AS Avg_totalSteps,
+  ROUND(AVG(total_sleep_hrs),2) AS Avg_sleep_hrs
+FROM `learning-468823.bellabeat.daily_all`
+GROUP BY weekday
+ORDER BY CASE weekday
+  WHEN 'Mon' THEN 1 WHEN 'Tue' THEN 2 WHEN 'Wed' THEN 3
+  WHEN 'Thu' THEN 4 WHEN 'Fri' THEN 5 WHEN 'Sat' THEN 6
+  WHEN 'Sun' THEN 7 END;
