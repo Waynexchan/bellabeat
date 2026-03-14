@@ -59,13 +59,13 @@ Recommendations:
 
 Visualizations
 **Figure 1: Average Daily Activity by Day of Week**  
-![Weekday Activity](images/fig1_weekday_activity.png)
+![Weekday Activity](figures/images/fig1_weekday_activity.png)
 
 **Figure 2: Weekday vs Weekend Calorie Expenditure**  
-![Weekend Calories](images/fig2_weekend_calories.png)
+![Weekend Calories](figures/images/fig2_weekend_calories.png)
 
 **Figure 3: Relationship Between Steps and Calories**  
-![Steps vs Calories](images/fig3_steps_vs_calories.png)
+![Steps vs Calories](figures/images/fig3_steps_vs_calories.png)
 
 
 Repository Structure:
