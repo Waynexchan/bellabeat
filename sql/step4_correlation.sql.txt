@@ -1,3 +1,13 @@
+-- Business question:
+-- How are daily steps related to calories and sleep duration?
+
+-- Purpose:
+-- Calculate correlations between total steps and calories, and between total steps and sleep hours.
+
+-- Notes:
+-- Correlation does not prove causation.
+-- Rows with zero calories or missing sleep hours are excluded.
+
 SELECT  
  CORR(TotalSteps, Calories) AS corr_step_calories,
  CORR(TotalSteps,total_sleep_hrs) AS corr_step_total_sleep_hrs

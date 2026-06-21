@@ -1,3 +1,12 @@
+-- Business question:
+-- Do user activity, calories, and sleep differ between weekdays and weekends?
+
+-- Purpose:
+-- Compare average calories, steps, and sleep hours by weekday/weekend grouping.
+
+-- Notes:
+-- BigQuery EXTRACT(DAYOFWEEK) returns 1 for Sunday and 7 for Saturday.
+
 SELECT  
   CASE
     WHEN(EXTRACT (DAYOFWEEK From activity_date)) IN (1,7) THEN 'Weekend'
